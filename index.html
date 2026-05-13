@@ -2,66 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradeConnectAI</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TradeConnectAI helps trades and service businesses answer enquiries, capture job details and book work automatically." />
+  <title>TradeConnectAI | AI Receptionist for Trades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="content">
-            <h1>TradeConnect<span class="accent">AI</span></h1>
-            <p class="tagline">Smart automation for tradespeople and service businesses</p>
+  <main class="page-shell">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="TradeConnectAI home">
+        <span class="brand-mark">TC</span>
+        <span>TradeConnect<span>AI</span></span>
+      </a>
+      <a class="nav-link" href="mailto:info@tradeconnectai.co.uk">info@tradeconnectai.co.uk</a>
+    </nav>
 
-            <button id="waitlistBtn">Join Waitlist</button>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="pill">Coming soon for UK trades & service businesses</div>
+        <h1>Your AI receptionist for calls, quotes and booked jobs.</h1>
+        <p class="lead">
+          TradeConnectAI helps electricians, plumbers, skip hire companies and local service teams capture leads,
+          answer enquiries and turn missed calls into organised jobs.
+        </p>
 
-            <p class="coming-soon">Coming Soon</p>
-            <p class="feedback">
-                Help shape the future of TradeConnectAI.<br />
-                Tell us what you want the product to do:<br />
-                <a href="mailto:info@tradeconnectai.co.uk">info@tradeconnectai.co.uk</a>
-            </p>
+        <form id="waitlistForm" class="waitlist-form">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <button type="submit">Join waitlist</button>
+          <p id="message" role="status"></p>
+        </form>
 
-            <section class="features">
-                <h2>What’s Coming</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <img src="icons/ai-job.svg" alt="AI Job Matching" />
-                        <p>AI Job Matching</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="icons/calendar.svg" alt="Smart Booking Calendar" />
-                        <p>Smart Booking Calendar</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="icons/materials.svg" alt="Automated Material Lists" />
-                        <p>Automated Material Lists</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="icons/chat.svg" alt="Customer Messaging" />
-                        <p>Customer Messaging</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="icons/payment.svg" alt="Stripe Billing Integration" />
-                        <p>Stripe Billing Integration</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="icons/dashboard.svg" alt="Real‑time Dashboard" />
-                        <p>Real‑time Dashboard</p>
-                    </div>
-                </div>
-            </section>
-
-            <form id="waitlistForm">
-                <input type="email" id="email" placeholder="Enter your email" required />
-                <button type="submit">Join Waitlist</button>
-                <p id="message"></p>
-            </form>
+        <div class="trust-row">
+          <span>Built for busy people on the tools</span>
+          <span>•</span>
+          <span>Simple setup</span>
+          <span>•</span>
+          <span>No missed leads</span>
         </div>
-    </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="hero-card" aria-label="Product preview">
+        <div class="card-topbar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="dashboard-header">
+          <div>
+            <p>Today</p>
+            <h2>12 leads captured</h2>
+          </div>
+          <strong>+38%</strong>
+        </div>
+        <div class="stats-grid">
+          <div><span>Calls answered</span><strong>24</strong></div>
+          <div><span>Jobs booked</span><strong>8</strong></div>
+          <div><span>Quotes sent</span><strong>6</strong></div>
+        </div>
+        <div class="job-list">
+          <div class="job-item">
+            <span class="dot"></span>
+            <div><strong>Emergency leak</strong><p>Cardiff • today 4:30pm</p></div>
+          </div>
+          <div class="job-item">
+            <span class="dot"></span>
+            <div><strong>Skip delivery</strong><p>Barry • tomorrow 9:00am</p></div>
+          </div>
+          <div class="job-item">
+            <span class="dot"></span>
+            <div><strong>Fuse board quote</strong><p>Newport • Friday</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p>What’s coming</p>
+        <h2 id="features-title">A practical AI toolkit for local businesses</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-item">
+          <span class="icon">☎</span>
+          <h3>AI call answering</h3>
+          <p>Capture name, job type, location, urgency and preferred time when you cannot answer.</p>
+        </article>
+        <article class="feature-item">
+          <span class="icon">📅</span>
+          <h3>Smart booking</h3>
+          <p>Let customers request slots and keep jobs organised in one simple dashboard.</p>
+        </article>
+        <article class="feature-item">
+          <span class="icon">💬</span>
+          <h3>Customer messaging</h3>
+          <p>Send confirmations, reminders and follow-ups without losing track of conversations.</p>
+        </article>
+        <article class="feature-item">
+          <span class="icon">🧾</span>
+          <h3>Quotes & details</h3>
+          <p>Turn enquiries into clean job summaries with photos, notes and customer requirements.</p>
+        </article>
+        <article class="feature-item">
+          <span class="icon">💳</span>
+          <h3>Stripe payments</h3>
+          <p>Take deposits, subscriptions or job payments with a professional checkout flow.</p>
+        </article>
+        <article class="feature-item">
+          <span class="icon">📊</span>
+          <h3>Live dashboard</h3>
+          <p>See leads, bookings, revenue and missed-call recovery at a glance.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
